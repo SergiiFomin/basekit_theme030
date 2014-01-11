@@ -1,0 +1,72 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+    <div class="global">
+        <!--header-->
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+                        <div class="row">
+                            <article class="span6">
+                                {{widget('profile', 'address', { 'profileType':'address', 'address':'profile'})|raw}}
+                            </article>
+                            <article class="span6">
+                                {{widget('profile', 'phone', { 'profileType':'phone', 'phone':'(800) 2345-6789'})|raw}}
+                            </article>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--header-->
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <article class="span12">
+                            {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="navigation">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+                        {{widget('extendednavigation', 'extendednavigation', {"align":"center"})|raw}}
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--content-->
+        <div class="contentInner">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+
+                        {{zone('main')|raw}}
+
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <section class="span12">
+                        {{widget('companyname', 'companyname', {"business": "Building the pyramids"})|raw}}
+                        {{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'© Copyright 2014'})|raw}}
+                        {{widget('space', 'space', {'height': '30'})|raw}}
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </div>    
+</div>
+
+{% endblock %}

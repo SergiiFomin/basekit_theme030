@@ -1,0 +1,141 @@
+{
+  "name":"basekit_default",
+  "thumbnail":"theme_preview.png",
+  "screenshot":"theme_preview.png",    
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#645f58",
+            "color3":"#cc220b",
+            "color4":"#5c564d",
+            "color5":"#d1ccc2",
+            "color6":"#524a42",
+            "color7":"#77736c"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        }
+    },
+    "fontSwatch": {
+       "title": "Open Sans",
+        "font1": {
+            "font-family": "Open Sans",     
+            "font-size": "42px",       
+            "font-weight": "300",  
+            "line-height": "36px",     
+            "color": "@color-swatch4", 
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "Open Sans",     
+            "font-size": "29px",       
+            "font-weight": "500",  
+            "line-height": "36px",  
+            "color": "@color-swatch4", 
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "Open Sans",     
+            "font-size": "18px",       
+            "font-weight": "inherit",  
+            "line-height": "inherit",  
+            "color": "@color-swatch4", 
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "Helvetica Neue, Arial",
+            "font-size": "16px",       
+            "font-weight": "inherit",  
+            "line-height": "inherit",  
+            "color": "@color-swatch4", 
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "Helvetica, arial", 
+            "font-size": "14px",        
+            "font-weight": "inherit",   
+            "line-height": "28px",      
+            "color": "@color-swatch5",  
+            "letter-spacing": "inherit" 
+        },
+        "font6": {
+            "font-family": "Open Sans",
+            "font-size": "17px", 
+            "font-weight": "bold",
+            "line-height": "20px",
+            "color": "@color-swatch1",
+            "color-hover": "@color-swatch1",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch2",
+            "background-color-hover": "@color-swatch3"
+        },
+        "font7": {
+            "font-family": "Helvetica, arial",
+            "font-size": "14px",        
+            "font-weight": "inherit",   
+            "line-height": "inherit",   
+            "color": "@color-swatch1",  
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,20%)"
+        },
+        "font8": {
+            "font-family": "Open Sans",   
+            "font-size": "50px",     
+            "font-weight": "inherit",
+            "line-height": "50px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "Open Sans",
+            "font-size": "24px",
+            "font-weight": "inherit",
+            "line-height": "50px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "Open Sans",
+            "font-size": "24px",
+            "font-weight": "inherit",
+            "line-height": "50px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        }
+    }
+}

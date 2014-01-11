@@ -1,0 +1,103 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+    <div class="global">
+        <!--header-->
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+                        <div class="row">
+                            <article class="span6">
+                                {{widget('profile', 'address', { 'profileType':'address', 'address':'profile'})|raw}}
+                            </article>
+                            <article class="span6">
+                                {{widget('profile', 'phone', { 'profileType':'phone', 'phone':'(800) 2345-6789'})|raw}}
+                            </article>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--header-->
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <article class="span12">
+                            {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="navigation">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+                        {{widget('extendednavigation', 'extendednavigation', {"align":"center"})|raw}}
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--content-->
+        <div class="contentInner">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+                        <div class="row">
+                            <article class="span4">
+                                {{widget('content', 'title1', {content: '<h2>our advantages</h2>', lines: 'all'})|raw}}
+                                {{widget('content', 'content1', {content: '<ul class="list-drop"><li><span class="drop">1.</span><div class="overflow"><p class="color">Dapibus cursus neque, non.</p><p>Mauris volutpat enim purus, interdum orci, ut vestibulum purus dapibus eu cras eget.</p></div></li><li><span class="drop">2.</span><div class="overflow"><p class="color">Nulla dapibus cursus neque.</p><p>Mauris volutpat enim purus, interdum orci, ut vestibulum purus dapibus eu cras eget.</p></div></li><li><span class="drop">3.</span><div class="overflow"><p class="color">Maecenas hendrerit semper.</p><p>Mauris volutpat enim purus, interdum orci, ut vestibulum purus dapibus eu cras eget.</p></div></li></ul>', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                {{widget('content', 'title2', {content: '<h2>testimonials</h2>', lines: 'all'})|raw}}
+                                {{widget('content', 'content2', {content: '<blockquote> <p>Suspendisse tempus interdum orci, ut vestibulum purus dapibus eu. Cras eget lectus ultrices metus pretium lobortis? Nulla vehicula pretium.</p> <span class="color">Mark Johnson,</span> <a href="mailto:info@demolink.org">info@demolink.org</a> </blockquote><blockquote> <p>Interdum orci, ut vestibulum purus da pibus eu. Cras eget lectus ultric metus pretium lobo Nulla vehicula pretiun assa ut facilisis.</p> <span class="color">Din Haddon,</span> <a href="mailto:info@demolink.org">info@demolink.org</a> </blockquote>', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+                            </article>
+                            <article class="span8">
+                                {{widget('content', 'title3', {content: '<h2>our vision</h2>', lines: 'all'})|raw}}
+                                {{widget('content', 'content3', {content: '<p class="color">Nulla dapibus cursus neque, non fringilla ante viverra nec.</p><p>Mauris volutpat enim purus, sit amet condimentum ante fermentum accumsan. Praesent non leo nulla. Suspendisse tempus interdum orci, ut vestibulum purus dapibus eu. Cras eget lectus ultrices metus pretium lobortis? Nulla vehicula pretium massa ut facilisis. Praesent sed dolor eget purus varius sagittis. Maecenas adipiscing iaculis nulla, at fringilla tortor? Nunc eu facilisis mauris.</p>', lines: 'all'})|raw}}
+                                {{widget('button', 'button', {italic: false, text:'Read more', 'align':'widget-align-left'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                {{widget('content', 'title4', {content: '<h2>ARCHITECTURAL COMPOSITION OF A PYRAMID</h2>', lines: 'all'})|raw}}
+                                {{widget('gallery', 'arch', 
+                                    {'showDescription': true,
+                                    'showTitle': true,
+                                    'images':
+                                    [
+                                    {'imageHeight':'397', 'imageWidth':'480', 'url':asset('/images/arch/img1.jpg'), 'title':'Mauris accumsan ', 'description': 'Mauris volutpat enim purus, sit amet condim.'},
+                                    {'imageHeight':'397', 'imageWidth':'480', 'url':asset('/images/arch/img2.jpg'), 'title':'In faucibus orci luctus', 'description': 'Mauris volutpat enim purus, sit amet condim.'},
+                                    {'imageHeight':'397', 'imageWidth':'480', 'url':asset('/images/arch/img3.jpg'), 'title':'Lacinia fermentum', 'description': 'Mauris volutpat enim purus, sit amet condim.'},
+                                    {'imageHeight':'397', 'imageWidth':'480', 'url':asset('/images/arch/img4.jpg'), 'title':'Nulla facilisi', 'description': 'Mauris volutpat enim purus, sit amet condim.'},
+                                    {'imageHeight':'397', 'imageWidth':'480', 'url':asset('/images/arch/img5.jpg'), 'title':'Lorem ipsum dolor', 'description': 'Mauris volutpat enim purus, sit amet condim.'}
+                                    ]
+                                })|raw}}
+                            </article>
+                        </div>
+
+                        {{zone('main')|raw}}
+
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <section class="span12">
+                        {{widget('companyname', 'companyname', {"business": "Building the pyramids"})|raw}}
+                        {{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'© Copyright 2014'})|raw}}
+                        {{widget('space', 'space', {'height': '30'})|raw}}
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </div>    
+</div>
+
+{% endblock %}

@@ -1,0 +1,121 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">    
+    <div class="global">
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+                        <div class="row">
+                            <article class="span6">
+                                {{widget('profile', 'address', { 'profileType':'address', 'address':'profile'})|raw}}
+                            </article>
+                            <article class="span6">
+                                {{widget('profile', 'phone', { 'profileType':'phone', 'phone':'(800) 2345-6789'})|raw}}
+                            </article>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--header-->
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <article class="span12">
+                            {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="navigation">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+                        {{widget('extendednavigation', 'extendednavigation', {"align":"center"})|raw}}
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="showcase">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+
+                        {{widget('responsiveslideshow', 'responsiveslideshow', {'duration':'3', 'crop':1, 'transSpeed': '1000', 'transType': 'fade', 'showDescription': true, 'showTitle': true, 'showButtons': false, 'showBullets': false, 'allowPause': false, 'allowLoop': false, 'images':[{'imageHeight':'513', 'imageWidth':'1170', 'url':asset('/images/slider/slide-1.jpg'), 'title':'exploring the history', 'description': 'of the pyramids'}, {'imageHeight':'513','imageWidth':'1170', 'url':asset('/images/slider/slide-2.jpg'), 'title':'exploring the history', 'description': 'of the pyramids'}]})|raw}}
+
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--content-->
+        <div class="contentInner">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+
+                        {{zone('main')|raw}}
+                        
+                        <div class="row">
+                            <article class="span4">
+                                <figure class="img">{{widget('image', 'image1', { 'src': asset('images/pages/page1-img1.jpg'),  'imageWidth': '768px'})|raw}}</figure>
+                                {{widget('content', 'subtitle1', {content: '<h1 class="bg"><span>Pyramid</span> symbolism</h1>', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+                            </article>
+                            <article class="span4">
+                                <figure class="img">{{widget('image', 'image2', { 'src': asset('images/pages/page1-img2.jpg'),  'imageWidth': '768px'})|raw}}</figure>
+                                {{widget('content', 'subtitle2', {content: '<h1 class="bg"><span>Historical</span> development</h1>', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+                            </article>
+                            <article class="span4">
+                                <figure class="img">{{widget('image', 'image3', { 'src': asset('images/pages/page1-img3.jpg'),  'imageWidth': '768px'})|raw}}</figure>
+                                {{widget('content', 'subtitle3', {content: '<h1 class="bg"><span>location</span> of pyramids</h1>', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+                            </article>
+                        </div>
+
+                        <div class="row">
+                            <article class="span4">
+                                {{widget('content', 'title1', {content: '<h2>Welcome!</h2>', lines: 'all'})|raw}}
+                                {{widget('content', 'content1', {content: '<p class="color">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p><p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+                            </article>
+                            <article class="span4">
+                                {{widget('content', 'title2', {content: '<h2>About</h2>', lines: 'all'})|raw}}
+                                {{widget('image', 'image', { 'src': asset('images/pages/page1-img4.jpg'), 'imageWidth': '768px'})|raw}}
+                                {{widget('content', 'content2', {content: '<p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>', lines: 'all'})|raw}}
+                                {{widget('button', 'button2', {italic: false, text:'read more', 'align':'widget-align-left'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+                            </article>
+                            <article class="span4">
+                                {{widget('content', 'title3', {content: '<h2>Related Links</h2>', lines: 'all'})|raw}}
+                                {{widget('content', 'content3', {content: '<ul class="item-list"><li><a href="#">Lorem ipsum dolor sit amet</a></li><li><a href="#">Conse ctetur adipisicing</a></li><li><a href="#">Elit sed do eiusmod tempor</a></li><li><a href="#">Incididunt ut labore</a></li><li><a href="#">Et dolore magna aliqua</a></li><li><a href="#">Ut enim ad minim veniam</a></li><li><a href="#">Quis nostrud exercitation</a></li></ul>', lines: 'all'})|raw}}
+                                {{widget('button', 'button3', {italic: false, text:'read more', 'align':'widget-align-left'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+                            </article>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <section class="span12">
+                        {{widget('companyname', 'companyname', {"business": "Building the pyramids"})|raw}}
+                        {{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'© Copyright 2014'})|raw}}
+                        {{widget('space', 'space', {'height': '30'})|raw}}
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </div>    
+</div>
+
+{% endblock %}
