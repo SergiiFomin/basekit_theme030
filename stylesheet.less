@@ -795,10 +795,6 @@ div[id$="copyright"] {
       margin-bottom: @baseLineHeight;
     }
   }
-  .twitter-profile-pic {
-    float: left;
-    margin-right: 20px;
-  }
   .twitter-content{
     span.bk-full-name {
       font-family: @font-swatch4-font-family;
@@ -1337,7 +1333,9 @@ div[id$="phone"] {
 
 /* Large desktop */
 @media (max-width: 1200px) {
-
+  h1{
+    font-size: 40px;
+  }
 } 
 
 /*== Up to 980px ======================================================
@@ -1345,7 +1343,9 @@ div[id$="phone"] {
 
 /* Narrow desktop */
 @media (max-width: 980px) {
-
+  h1{
+    font-size: 28px;
+  }
 }
 
 /*== Up to 980px and beyond 768px ======================================
@@ -1360,6 +1360,26 @@ div[id$="phone"] {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px){
+
+  .responsiveslideshow .slideshow-widget > ul.slideshow-image-list{
+    height: 263px;
+    .content-wrapper {
+      max-width: 500px;
+      padding: 30px 20px;
+      .title, .description {
+        font-size: 34px;
+        line-height: 40px;
+      }
+    }
+  }
+  .gallery-widget{
+    li{
+      float: left;
+      list-style: none;
+      width: 31%;
+      margin: 0 2% 2% 0;
+    }
+  }
 
   /* NAV */
   .widget.extendednavigation {
@@ -1408,6 +1428,7 @@ div[id$="phone"] {
       width: 100%;
       position: absolute;
       top: 6px;
+      outline: none;
       &:after {
         content:"";
         background: image('/images/nav-icon.png') no-repeat;
@@ -1429,7 +1450,18 @@ div[id$="phone"] {
 ====================================================================*/
 
 @media (max-width: 640px) {
-
+  .responsiveslideshow .slideshow-widget > ul.slideshow-image-list{
+    .content-wrapper {
+      padding: 20px;
+      .title, .description {
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+  }
+  .widget.signupform fieldset input {
+    width: 70%;
+  }
 }
 
 /*== Up to 480px ==================================================
@@ -1438,15 +1470,23 @@ div[id$="phone"] {
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
+  .gallery-widget{
+    li{
+      float: left;
+      list-style: none;
+      width: 48%;
+      margin: 0 2% 2% 0;
+    }
+  }
+
   /* NAV */
   .widget.extendednavigation {
     display: block;
     width: 100%;
     ul {
-      display: block;
       width: 100%;
-      float: left;
-      margin: 0;
+      display: none;
+      margin: 2em 0;
       li {
         display: block!important;
         width: 100%;
@@ -1476,6 +1516,7 @@ div[id$="phone"] {
       width: 100%;
       position: absolute;
       top: 6px;
+      outline: none;
       &:after {
         content:"";
         background: image('/images/nav-icon.png') no-repeat;
@@ -1496,5 +1537,7 @@ div[id$="phone"] {
 
 /* Portrait phones */
 @media (max-width: 340px) {
-
+  div[id$="address"] {
+    font-size: 12px;
+  }
 }
